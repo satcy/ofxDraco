@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AC9B8C55E2C460F12E508F4 /* ofxDraco.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41562255042F12653AAA8E52 /* ofxDraco.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0028A967C8B56AD31CF5787F /* mesh_prediction_scheme_data.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_prediction_scheme_data.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/mesh_prediction_scheme_data.h; sourceTree = SOURCE_ROOT; };
+		01AA3DBE10A03444C8489539 /* symbol_decoding.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = symbol_decoding.h; path = ../../../addons/ofxDraco/libs/draco/include/core/symbol_decoding.h; sourceTree = SOURCE_ROOT; };
+		02B624977391D24795AE1B15 /* rans_symbol_coding.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rans_symbol_coding.h; path = ../../../addons/ofxDraco/libs/draco/include/core/rans_symbol_coding.h; sourceTree = SOURCE_ROOT; };
+		035633F0A4E03762345D66A3 /* mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/mesh.h; sourceTree = SOURCE_ROOT; };
+		037CC7E261FBCDBAB37A9D7A /* sequential_attribute_decoders_controller.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_attribute_decoders_controller.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_attribute_decoders_controller.h; sourceTree = SOURCE_ROOT; };
+		09CBED164160DD439AFADE13 /* integer_points_kd_tree_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = integer_points_kd_tree_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms/integer_points_kd_tree_decoder.h; sourceTree = SOURCE_ROOT; };
+		0C649100059A7602013779B1 /* ply_reader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ply_reader.h; path = ../../../addons/ofxDraco/libs/draco/include/io/ply_reader.h; sourceTree = SOURCE_ROOT; };
+		11B70E9FE83AE4BBCF3064C4 /* mesh_prediction_scheme_parallelogram_shared.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_prediction_scheme_parallelogram_shared.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/mesh_prediction_scheme_parallelogram_shared.h; sourceTree = SOURCE_ROOT; };
+		1349B5B7DC0AE7408AA1A308 /* data_buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = data_buffer.h; path = ../../../addons/ofxDraco/libs/draco/include/core/data_buffer.h; sourceTree = SOURCE_ROOT; };
+		1495F03690E65E0B3318833F /* cycle_timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cycle_timer.h; path = ../../../addons/ofxDraco/libs/draco/include/core/cycle_timer.h; sourceTree = SOURCE_ROOT; };
+		14D511460D766DA426755FC9 /* prediction_scheme_difference.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = prediction_scheme_difference.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/prediction_scheme_difference.h; sourceTree = SOURCE_ROOT; };
+		15C64C62814CA3893A1AAFA4 /* draco_types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = draco_types.h; path = ../../../addons/ofxDraco/libs/draco/include/core/draco_types.h; sourceTree = SOURCE_ROOT; };
+		1B8FF02FB6A25296A8F5BE94 /* linear_sequencer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = linear_sequencer.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/linear_sequencer.h; sourceTree = SOURCE_ROOT; };
+		1EC754CC9E36A783D4BB6EA9 /* sequential_quantization_attribute_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_quantization_attribute_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_quantization_attribute_decoder.h; sourceTree = SOURCE_ROOT; };
+		1F6F28C6F4AECD22E1A9D038 /* point_cloud_builder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud_builder.h; path = ../../../addons/ofxDraco/libs/draco/include/point_cloud/point_cloud_builder.h; sourceTree = SOURCE_ROOT; };
+		2183158E94A234186D8BB711 /* edgebreaker_observer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = edgebreaker_observer.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/edgebreaker_observer.h; sourceTree = SOURCE_ROOT; };
+		21E97EA36637CBA6314F5E82 /* mesh_prediction_scheme_tex_coords.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_prediction_scheme_tex_coords.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/mesh_prediction_scheme_tex_coords.h; sourceTree = SOURCE_ROOT; };
+		2526C2B0462BB35662D2454B /* attributes_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = attributes_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/attributes_encoder.h; sourceTree = SOURCE_ROOT; };
+		25402342A2540D42282740DA /* sequential_attribute_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_attribute_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_attribute_decoder.h; sourceTree = SOURCE_ROOT; };
+		2557C40D214FE6DE4B7A79F2 /* math_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = math_utils.h; path = ../../../addons/ofxDraco/libs/draco/include/core/math_utils.h; sourceTree = SOURCE_ROOT; };
+		2598DD00188A7BA33BBEA3C6 /* ofxDraco.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDraco.h; path = ../../../addons/ofxDraco/src/ofxDraco.h; sourceTree = SOURCE_ROOT; };
+		289B05BE88C8A45055D11A6C /* ply_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ply_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/io/ply_decoder.h; sourceTree = SOURCE_ROOT; };
+		2A5BC362899E3F65F4A71F45 /* mesh_edgebreaker_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_decoder.h; sourceTree = SOURCE_ROOT; };
+		2CD74538CC3213A8E50A55EB /* encode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = encode.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/encode.h; sourceTree = SOURCE_ROOT; };
+		2F6854BE16C0ADEFEC027E4C /* mesh_attribute_corner_table.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_attribute_corner_table.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/mesh_attribute_corner_table.h; sourceTree = SOURCE_ROOT; };
+		2F91A6BDC3F210F6B3F2F38D /* mesh_edgebreaker_traversal_predictive_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_traversal_predictive_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_traversal_predictive_decoder.h; sourceTree = SOURCE_ROOT; };
+		2F9F151C1BD9CFEEC274B153 /* rans_symbol_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rans_symbol_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/core/rans_symbol_encoder.h; sourceTree = SOURCE_ROOT; };
+		324B808F8502EE6AEEAA844E /* mesh_edgebreaker_decoder_impl_interface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_decoder_impl_interface.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_decoder_impl_interface.h; sourceTree = SOURCE_ROOT; };
+		3446E23447A1FBE5EAA2560A /* edgebreaker_traverser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = edgebreaker_traverser.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/edgebreaker_traverser.h; sourceTree = SOURCE_ROOT; };
+		371550C821AE659F66D64F57 /* queuing_policy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = queuing_policy.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms/queuing_policy.h; sourceTree = SOURCE_ROOT; };
+		371747DA1EFAE97A3B11BDFD /* sequential_integer_attribute_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_integer_attribute_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_integer_attribute_encoder.h; sourceTree = SOURCE_ROOT; };
+		3844D19A6EAAD894F0168B28 /* obj_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = obj_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/io/obj_decoder.h; sourceTree = SOURCE_ROOT; };
+		3CF0CBED90D308E7EDAA2E7C /* attributes_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = attributes_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/attributes_decoder.h; sourceTree = SOURCE_ROOT; };
+		40D193C5E1928FE52026594D /* encoding_features.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = encoding_features.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/config/encoding_features.h; sourceTree = SOURCE_ROOT; };
+		41562255042F12653AAA8E52 /* ofxDraco.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxDraco.cpp; path = ../../../addons/ofxDraco/src/ofxDraco.cpp; sourceTree = SOURCE_ROOT; };
+		440D84D549F3D3FB334A9985 /* mesh_decoder_helpers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_decoder_helpers.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_decoder_helpers.h; sourceTree = SOURCE_ROOT; };
+		4706C5694215FF269C57EB15 /* corner_table_iterators.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = corner_table_iterators.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/corner_table_iterators.h; sourceTree = SOURCE_ROOT; };
+		4B544B2300C32B5E3A38C06C /* mesh_edgebreaker_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_encoder.h; sourceTree = SOURCE_ROOT; };
+		4BF9F19AC6ECE40ACDFB52FC /* quantize_points_3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = quantize_points_3.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms/quantize_points_3.h; sourceTree = SOURCE_ROOT; };
+		4C36E60BF08B40FEAC087915 /* mesh_traversal_sequencer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_traversal_sequencer.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/mesh_traversal_sequencer.h; sourceTree = SOURCE_ROOT; };
+		4D0B07B872A93FCC5437CAF4 /* point_cloud_sequential_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud_sequential_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/point_cloud_sequential_encoder.h; sourceTree = SOURCE_ROOT; };
+		52189D05CA3AAE00F3ED2BA2 /* prediction_scheme.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = prediction_scheme.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/prediction_scheme.h; sourceTree = SOURCE_ROOT; };
+		52A74D711C8151EF7D3D8A95 /* prediction_scheme_encoder_factory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = prediction_scheme_encoder_factory.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/prediction_scheme_encoder_factory.h; sourceTree = SOURCE_ROOT; };
+		53D57E36EADA323FFCAEB5E6 /* rans_coding.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rans_coding.h; path = ../../../addons/ofxDraco/libs/draco/include/core/rans_coding.h; sourceTree = SOURCE_ROOT; };
+		564429E24A9C032C498906A6 /* ply_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ply_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/io/ply_encoder.h; sourceTree = SOURCE_ROOT; };
+		56468672EF5662707E8FE2DA /* mesh_edgebreaker_encoder_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_encoder_impl.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_encoder_impl.h; sourceTree = SOURCE_ROOT; };
+		56F328601FE4C26927ADE971 /* kd_tree_attributes_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = kd_tree_attributes_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/kd_tree_attributes_decoder.h; sourceTree = SOURCE_ROOT; };
+		587F4CBB26C29766C9BC3760 /* divide.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = divide.h; path = ../../../addons/ofxDraco/libs/draco/include/core/divide.h; sourceTree = SOURCE_ROOT; };
+		5B2390B3C213C6D201C1E180 /* decoder_buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = decoder_buffer.h; path = ../../../addons/ofxDraco/libs/draco/include/core/decoder_buffer.h; sourceTree = SOURCE_ROOT; };
+		5B601EC5055EC1591287DDB0 /* prediction_scheme_factory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = prediction_scheme_factory.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/prediction_scheme_factory.h; sourceTree = SOURCE_ROOT; };
+		5C922327174402D3B39AD118 /* quantization_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = quantization_utils.h; path = ../../../addons/ofxDraco/libs/draco/include/core/quantization_utils.h; sourceTree = SOURCE_ROOT; };
+		5E41D4834646F07DE2F667D6 /* prediction_scheme_transform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = prediction_scheme_transform.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/prediction_scheme_transform.h; sourceTree = SOURCE_ROOT; };
+		5E7C0CFA9BA45D3AA0BC0FBA /* bit_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = bit_utils.h; path = ../../../addons/ofxDraco/libs/draco/include/core/bit_utils.h; sourceTree = SOURCE_ROOT; };
+		607C5F9963D975D6857F1164 /* mesh_attribute_indices_encoding_observer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_attribute_indices_encoding_observer.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/mesh_attribute_indices_encoding_observer.h; sourceTree = SOURCE_ROOT; };
+		621C0F778435A83E37346B2E /* point_cloud_kd_tree_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud_kd_tree_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/point_cloud_kd_tree_encoder.h; sourceTree = SOURCE_ROOT; };
+		64BFD5B5D2E6B2EA2B03D175 /* sequential_attribute_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_attribute_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_attribute_encoder.h; sourceTree = SOURCE_ROOT; };
+		6634B8C4E491F5078CA858A3 /* mesh_prediction_scheme_parallelogram.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_prediction_scheme_parallelogram.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/mesh_prediction_scheme_parallelogram.h; sourceTree = SOURCE_ROOT; };
+		68BB7F6190AF94A76CDC5D37 /* points_sequencer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = points_sequencer.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/points_sequencer.h; sourceTree = SOURCE_ROOT; };
+		6AF9386DDC8AF7062CF535AD /* mesh_edgebreaker_shared.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_shared.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_shared.h; sourceTree = SOURCE_ROOT; };
+		6CDEDA10AC7F580F14D8186D /* encoder_buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = encoder_buffer.h; path = ../../../addons/ofxDraco/libs/draco/include/core/encoder_buffer.h; sourceTree = SOURCE_ROOT; };
+		6D8307C2DE5DBACEDF310C3D /* mesh_indices.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_indices.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/mesh_indices.h; sourceTree = SOURCE_ROOT; };
+		6F31AE09C2D68C62880B0BC9 /* rans_symbol_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rans_symbol_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/core/rans_symbol_decoder.h; sourceTree = SOURCE_ROOT; };
+		74703293E00450634230C0F4 /* sequential_attribute_encoders_controller.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_attribute_encoders_controller.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_attribute_encoders_controller.h; sourceTree = SOURCE_ROOT; };
+		7599787C6182831F6E9912A2 /* mesh_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_decoder.h; sourceTree = SOURCE_ROOT; };
+		76E52B6CC4590F41B22E0FA8 /* integer_points_kd_tree_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = integer_points_kd_tree_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms/integer_points_kd_tree_encoder.h; sourceTree = SOURCE_ROOT; };
+		7CC81E9C9241555D16FCBB30 /* point_cloud_kd_tree_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud_kd_tree_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/point_cloud_kd_tree_decoder.h; sourceTree = SOURCE_ROOT; };
+		7DD488CC62CC5EE50C0D6BDF /* corner_table.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = corner_table.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/corner_table.h; sourceTree = SOURCE_ROOT; };
+		840926C94CB9F62FF144B6D9 /* draco_test_base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = draco_test_base.h; path = ../../../addons/ofxDraco/libs/draco/include/core/draco_test_base.h; sourceTree = SOURCE_ROOT; };
+		84C7577F4F52F5E307CEF44D /* decode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = decode.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/decode.h; sourceTree = SOURCE_ROOT; };
+		898C4ED6FE6627F8F2C90BF3 /* sequential_normal_attribute_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_normal_attribute_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_normal_attribute_decoder.h; sourceTree = SOURCE_ROOT; };
+		8BF44AE175B4040011B6FDBE /* point_attribute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_attribute.h; path = ../../../addons/ofxDraco/libs/draco/include/point_cloud/point_attribute.h; sourceTree = SOURCE_ROOT; };
+		9078BDA2F5F389356088BC32 /* kd_tree_attributes_shared.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = kd_tree_attributes_shared.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/kd_tree_attributes_shared.h; sourceTree = SOURCE_ROOT; };
+		917949874034E4E631DFBEBF /* prediction_scheme_wrap_transform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = prediction_scheme_wrap_transform.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/prediction_scheme_wrap_transform.h; sourceTree = SOURCE_ROOT; };
+		9315D5C4408E60CDE9B66CBE /* kd_tree_attributes_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = kd_tree_attributes_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/kd_tree_attributes_encoder.h; sourceTree = SOURCE_ROOT; };
+		949DC57F58467D8D37B4E0A9 /* ply_property_reader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ply_property_reader.h; path = ../../../addons/ofxDraco/libs/draco/include/io/ply_property_reader.h; sourceTree = SOURCE_ROOT; };
+		96DFA51400618D1CCBD5F5EB /* mesh_edgebreaker_decoder_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_decoder_impl.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_decoder_impl.h; sourceTree = SOURCE_ROOT; };
+		985E1A254CA722849BD6DBB0 /* hash_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = hash_utils.h; path = ../../../addons/ofxDraco/libs/draco/include/core/hash_utils.h; sourceTree = SOURCE_ROOT; };
+		98729748200C26D6DC70473D /* mesh_misc_functions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_misc_functions.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/mesh_misc_functions.h; sourceTree = SOURCE_ROOT; };
+		99608A7C04810A5E596B9718 /* mesh_sequential_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_sequential_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_sequential_decoder.h; sourceTree = SOURCE_ROOT; };
+		9A8A942CCA6CFB709DBC9B08 /* sequential_quantization_attribute_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_quantization_attribute_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_quantization_attribute_encoder.h; sourceTree = SOURCE_ROOT; };
+		9DE28B84CA267A4F55B7CE0D /* ply_property_writer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ply_property_writer.h; path = ../../../addons/ofxDraco/libs/draco/include/io/ply_property_writer.h; sourceTree = SOURCE_ROOT; };
+		9FBA877F4B4C015E6B150D66 /* mesh_edgebreaker_encoder_impl_interface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_encoder_impl_interface.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_encoder_impl_interface.h; sourceTree = SOURCE_ROOT; };
+		A14B66D12F9ED4123602A3D8 /* mesh_encoder_helpers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_encoder_helpers.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_encoder_helpers.h; sourceTree = SOURCE_ROOT; };
+		A2C300A861C38AD900B99576 /* prediction_scheme_decoder_factory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = prediction_scheme_decoder_factory.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/prediction_scheme_decoder_factory.h; sourceTree = SOURCE_ROOT; };
+		A4C9723875EA8DCDACE57E0C /* geometry_attribute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = geometry_attribute.h; path = ../../../addons/ofxDraco/libs/draco/include/point_cloud/geometry_attribute.h; sourceTree = SOURCE_ROOT; };
+		A522939628F9794E7A34AD08 /* bit_coder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = bit_coder.h; path = ../../../addons/ofxDraco/libs/draco/include/core/bit_coder.h; sourceTree = SOURCE_ROOT; };
+		A592699EC497010B92322E4E /* ans.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ans.h; path = ../../../addons/ofxDraco/libs/draco/include/core/ans.h; sourceTree = SOURCE_ROOT; };
+		A63E1CF153ABB9AC934F1EAD /* normal_compression_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = normal_compression_utils.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/normal_compression_utils.h; sourceTree = SOURCE_ROOT; };
+		A79729EF8FFC254A9743B64D /* macros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = macros.h; path = ../../../addons/ofxDraco/libs/draco/include/core/macros.h; sourceTree = SOURCE_ROOT; };
+		AD47C33DA4B126141104CAC0 /* geometry_indices.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = geometry_indices.h; path = ../../../addons/ofxDraco/libs/draco/include/point_cloud/geometry_indices.h; sourceTree = SOURCE_ROOT; };
+		AE5320B85DC2FBB418811370 /* draco_version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = draco_version.h; path = ../../../addons/ofxDraco/libs/draco/include/core/draco_version.h; sourceTree = SOURCE_ROOT; };
+		AEB65BA04DECAD185F891ABB /* mesh_prediction_scheme.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_prediction_scheme.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/mesh_prediction_scheme.h; sourceTree = SOURCE_ROOT; };
+		B14CEC124298CE6DA4D56422 /* point_cloud_types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud_types.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms/point_cloud_types.h; sourceTree = SOURCE_ROOT; };
+		B1AE1E07E36A950D1AACA15E /* prediction_scheme_interface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = prediction_scheme_interface.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/prediction_scheme_interface.h; sourceTree = SOURCE_ROOT; };
+		B1C725A83BBF8302E261CDC3 /* corner_table_traversal_processor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = corner_table_traversal_processor.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/corner_table_traversal_processor.h; sourceTree = SOURCE_ROOT; };
+		B1D7D38A7D124070E23A421D /* mesh_edgebreaker_traversal_predictive_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_traversal_predictive_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_traversal_predictive_encoder.h; sourceTree = SOURCE_ROOT; };
+		B4F26FC8576B23F9A800F4B9 /* point_cloud_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/point_cloud_encoder.h; sourceTree = SOURCE_ROOT; };
+		B64C436DDA9F64522276313F /* float_points_kd_tree_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = float_points_kd_tree_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms/float_points_kd_tree_encoder.h; sourceTree = SOURCE_ROOT; };
+		B6E999F26C7DAE9C072C735C /* parser_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = parser_utils.h; path = ../../../addons/ofxDraco/libs/draco/include/io/parser_utils.h; sourceTree = SOURCE_ROOT; };
+		B829A35969C9D874DC1FE6BE /* folded_bit32_coding.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = folded_bit32_coding.h; path = ../../../addons/ofxDraco/libs/draco/include/core/folded_bit32_coding.h; sourceTree = SOURCE_ROOT; };
+		B88D3D0EFA3DC5AA7290D95E /* prediction_scheme_normal_octahedron_transform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = prediction_scheme_normal_octahedron_transform.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/prediction_scheme_normal_octahedron_transform.h; sourceTree = SOURCE_ROOT; };
+		B90B7DE78F444E6AA1B3A2C2 /* compression_shared.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = compression_shared.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/config/compression_shared.h; sourceTree = SOURCE_ROOT; };
+		BCFDB6AE8B1D9201022DB192 /* mesh_edgebreaker_traversal_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_traversal_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_traversal_encoder.h; sourceTree = SOURCE_ROOT; };
+		BDB63070EBC3F5972F29C094 /* sequential_integer_attribute_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_integer_attribute_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_integer_attribute_decoder.h; sourceTree = SOURCE_ROOT; };
+		BF562CAB97460A31222F3259 /* mesh_cleanup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_cleanup.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/mesh_cleanup.h; sourceTree = SOURCE_ROOT; };
+		C3689B7DEF5695A868BF2BA6 /* vector_d.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = vector_d.h; path = ../../../addons/ofxDraco/libs/draco/include/core/vector_d.h; sourceTree = SOURCE_ROOT; };
+		C37E1E6B8F28ECD84CC69F1D /* mesh_io.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_io.h; path = ../../../addons/ofxDraco/libs/draco/include/io/mesh_io.h; sourceTree = SOURCE_ROOT; };
+		C655D2FB4B28664E44A34A66 /* adaptive_rans_coding.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = adaptive_rans_coding.h; path = ../../../addons/ofxDraco/libs/draco/include/core/adaptive_rans_coding.h; sourceTree = SOURCE_ROOT; };
+		CAE715071A0BF8913DAAADC9 /* corner_table_indices.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = corner_table_indices.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/corner_table_indices.h; sourceTree = SOURCE_ROOT; };
+		CB20394A9D87961E7287A29D /* options.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = options.h; path = ../../../addons/ofxDraco/libs/draco/include/core/options.h; sourceTree = SOURCE_ROOT; };
+		CFA1D02681F7BED33DB147B8 /* draco_test_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = draco_test_utils.h; path = ../../../addons/ofxDraco/libs/draco/include/core/draco_test_utils.h; sourceTree = SOURCE_ROOT; };
+		D0D144A5FB72BDEDB7D07C8E /* mesh_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_encoder.h; sourceTree = SOURCE_ROOT; };
+		D34E86A5C56757CA90E0E64C /* point_cloud_io.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud_io.h; path = ../../../addons/ofxDraco/libs/draco/include/io/point_cloud_io.h; sourceTree = SOURCE_ROOT; };
+		D470D084EC376FA2F5975FAC /* triangle_soup_mesh_builder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = triangle_soup_mesh_builder.h; path = ../../../addons/ofxDraco/libs/draco/include/mesh/triangle_soup_mesh_builder.h; sourceTree = SOURCE_ROOT; };
+		D4FD12B54D8F0ACD032CBD35 /* mesh_edgebreaker_traversal_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_edgebreaker_traversal_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_edgebreaker_traversal_decoder.h; sourceTree = SOURCE_ROOT; };
+		D7179B91F89253789EE6B253 /* draco_index_type_vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = draco_index_type_vector.h; path = ../../../addons/ofxDraco/libs/draco/include/core/draco_index_type_vector.h; sourceTree = SOURCE_ROOT; };
+		DBDA5BE31C385AFB01D36632 /* point_cloud_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/point_cloud_decoder.h; sourceTree = SOURCE_ROOT; };
+		DEB76B11CC1486F4467F3B00 /* encoder_options.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = encoder_options.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/config/encoder_options.h; sourceTree = SOURCE_ROOT; };
+		DEF861408DFCCFFCC4CC72FD /* mesh_sequential_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_sequential_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/mesh/mesh_sequential_encoder.h; sourceTree = SOURCE_ROOT; };
+		E07E2EAE9DB792F9BC90DDC5 /* point_cloud_sequential_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud_sequential_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/point_cloud_sequential_decoder.h; sourceTree = SOURCE_ROOT; };
+		E22ED5D82A3C66324C502FBD /* sequential_normal_attribute_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sequential_normal_attribute_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/sequential_normal_attribute_encoder.h; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E702B53EB7F3A43B1D49ED49 /* mesh_attribute_indices_encoding_data.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_attribute_indices_encoding_data.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/mesh_attribute_indices_encoding_data.h; sourceTree = SOURCE_ROOT; };
+		F173F2D1D90435970442F61F /* symbol_encoding.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = symbol_encoding.h; path = ../../../addons/ofxDraco/libs/draco/include/core/symbol_encoding.h; sourceTree = SOURCE_ROOT; };
+		F413A20588C6EBE9139ABAFF /* obj_encoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = obj_encoder.h; path = ../../../addons/ofxDraco/libs/draco/include/io/obj_encoder.h; sourceTree = SOURCE_ROOT; };
+		F58DB28D27A622A27C244CD0 /* draco_index_type.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = draco_index_type.h; path = ../../../addons/ofxDraco/libs/draco/include/core/draco_index_type.h; sourceTree = SOURCE_ROOT; };
+		F82FCF19824875DDDAF79180 /* mesh_prediction_scheme_multi_parallelogram.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh_prediction_scheme_multi_parallelogram.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes/mesh_prediction_scheme_multi_parallelogram.h; sourceTree = SOURCE_ROOT; };
+		FAC92906BFEDCD308BD8DC29 /* point_cloud.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = point_cloud.h; path = ../../../addons/ofxDraco/libs/draco/include/point_cloud/point_cloud.h; sourceTree = SOURCE_ROOT; };
+		FDD890BF0A0D64C71B8DCC6D /* float_points_kd_tree_decoder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = float_points_kd_tree_decoder.h; path = ../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms/float_points_kd_tree_decoder.h; sourceTree = SOURCE_ROOT; };
+		FFA677F31554908677808AB6 /* direct_bit_coding.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = direct_bit_coding.h; path = ../../../addons/ofxDraco/libs/draco/include/core/direct_bit_coding.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17EAFBC1887A9A7D1B6172E3 /* mesh */ = {
+			isa = PBXGroup;
+			children = (
+				7DD488CC62CC5EE50C0D6BDF /* corner_table.h */,
+				CAE715071A0BF8913DAAADC9 /* corner_table_indices.h */,
+				4706C5694215FF269C57EB15 /* corner_table_iterators.h */,
+				B1C725A83BBF8302E261CDC3 /* corner_table_traversal_processor.h */,
+				2183158E94A234186D8BB711 /* edgebreaker_observer.h */,
+				3446E23447A1FBE5EAA2560A /* edgebreaker_traverser.h */,
+				035633F0A4E03762345D66A3 /* mesh.h */,
+				2F6854BE16C0ADEFEC027E4C /* mesh_attribute_corner_table.h */,
+				BF562CAB97460A31222F3259 /* mesh_cleanup.h */,
+				6D8307C2DE5DBACEDF310C3D /* mesh_indices.h */,
+				98729748200C26D6DC70473D /* mesh_misc_functions.h */,
+				D470D084EC376FA2F5975FAC /* triangle_soup_mesh_builder.h */,
+			);
+			name = mesh;
+			sourceTree = "<group>";
+		};
+		2E5EE788288E1B319087EEAB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				41562255042F12653AAA8E52 /* ofxDraco.cpp */,
+				2598DD00188A7BA33BBEA3C6 /* ofxDraco.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		321E31460B4DD1388240943E /* point_cloud */ = {
+			isa = PBXGroup;
+			children = (
+				521E59548F7A182923A2DA91 /* algorithms */,
+				DBDA5BE31C385AFB01D36632 /* point_cloud_decoder.h */,
+				B4F26FC8576B23F9A800F4B9 /* point_cloud_encoder.h */,
+				7CC81E9C9241555D16FCBB30 /* point_cloud_kd_tree_decoder.h */,
+				621C0F778435A83E37346B2E /* point_cloud_kd_tree_encoder.h */,
+				E07E2EAE9DB792F9BC90DDC5 /* point_cloud_sequential_decoder.h */,
+				4D0B07B872A93FCC5437CAF4 /* point_cloud_sequential_encoder.h */,
+			);
+			name = point_cloud;
+			sourceTree = "<group>";
+		};
+		411F3047DF02D99FD80FFC75 /* attributes */ = {
+			isa = PBXGroup;
+			children = (
+				3CF0CBED90D308E7EDAA2E7C /* attributes_decoder.h */,
+				2526C2B0462BB35662D2454B /* attributes_encoder.h */,
+				56F328601FE4C26927ADE971 /* kd_tree_attributes_decoder.h */,
+				9315D5C4408E60CDE9B66CBE /* kd_tree_attributes_encoder.h */,
+				9078BDA2F5F389356088BC32 /* kd_tree_attributes_shared.h */,
+				1B8FF02FB6A25296A8F5BE94 /* linear_sequencer.h */,
+				E702B53EB7F3A43B1D49ED49 /* mesh_attribute_indices_encoding_data.h */,
+				607C5F9963D975D6857F1164 /* mesh_attribute_indices_encoding_observer.h */,
+				4C36E60BF08B40FEAC087915 /* mesh_traversal_sequencer.h */,
+				A63E1CF153ABB9AC934F1EAD /* normal_compression_utils.h */,
+				68BB7F6190AF94A76CDC5D37 /* points_sequencer.h */,
+				BE54661176715CD03BADA207 /* prediction_schemes */,
+				25402342A2540D42282740DA /* sequential_attribute_decoder.h */,
+				037CC7E261FBCDBAB37A9D7A /* sequential_attribute_decoders_controller.h */,
+				64BFD5B5D2E6B2EA2B03D175 /* sequential_attribute_encoder.h */,
+				74703293E00450634230C0F4 /* sequential_attribute_encoders_controller.h */,
+				BDB63070EBC3F5972F29C094 /* sequential_integer_attribute_decoder.h */,
+				371747DA1EFAE97A3B11BDFD /* sequential_integer_attribute_encoder.h */,
+				898C4ED6FE6627F8F2C90BF3 /* sequential_normal_attribute_decoder.h */,
+				E22ED5D82A3C66324C502FBD /* sequential_normal_attribute_encoder.h */,
+				1EC754CC9E36A783D4BB6EA9 /* sequential_quantization_attribute_decoder.h */,
+				9A8A942CCA6CFB709DBC9B08 /* sequential_quantization_attribute_encoder.h */,
+			);
+			name = attributes;
+			sourceTree = "<group>";
+		};
+		518E55C5DA5FB78E75ACBFA1 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				C655D2FB4B28664E44A34A66 /* adaptive_rans_coding.h */,
+				A592699EC497010B92322E4E /* ans.h */,
+				A522939628F9794E7A34AD08 /* bit_coder.h */,
+				5E7C0CFA9BA45D3AA0BC0FBA /* bit_utils.h */,
+				1495F03690E65E0B3318833F /* cycle_timer.h */,
+				1349B5B7DC0AE7408AA1A308 /* data_buffer.h */,
+				5B2390B3C213C6D201C1E180 /* decoder_buffer.h */,
+				FFA677F31554908677808AB6 /* direct_bit_coding.h */,
+				587F4CBB26C29766C9BC3760 /* divide.h */,
+				F58DB28D27A622A27C244CD0 /* draco_index_type.h */,
+				D7179B91F89253789EE6B253 /* draco_index_type_vector.h */,
+				840926C94CB9F62FF144B6D9 /* draco_test_base.h */,
+				CFA1D02681F7BED33DB147B8 /* draco_test_utils.h */,
+				15C64C62814CA3893A1AAFA4 /* draco_types.h */,
+				AE5320B85DC2FBB418811370 /* draco_version.h */,
+				6CDEDA10AC7F580F14D8186D /* encoder_buffer.h */,
+				B829A35969C9D874DC1FE6BE /* folded_bit32_coding.h */,
+				985E1A254CA722849BD6DBB0 /* hash_utils.h */,
+				A79729EF8FFC254A9743B64D /* macros.h */,
+				2557C40D214FE6DE4B7A79F2 /* math_utils.h */,
+				CB20394A9D87961E7287A29D /* options.h */,
+				5C922327174402D3B39AD118 /* quantization_utils.h */,
+				53D57E36EADA323FFCAEB5E6 /* rans_coding.h */,
+				02B624977391D24795AE1B15 /* rans_symbol_coding.h */,
+				6F31AE09C2D68C62880B0BC9 /* rans_symbol_decoder.h */,
+				2F9F151C1BD9CFEEC274B153 /* rans_symbol_encoder.h */,
+				01AA3DBE10A03444C8489539 /* symbol_decoding.h */,
+				F173F2D1D90435970442F61F /* symbol_encoding.h */,
+				C3689B7DEF5695A868BF2BA6 /* vector_d.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		521E59548F7A182923A2DA91 /* algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				FDD890BF0A0D64C71B8DCC6D /* float_points_kd_tree_decoder.h */,
+				B64C436DDA9F64522276313F /* float_points_kd_tree_encoder.h */,
+				09CBED164160DD439AFADE13 /* integer_points_kd_tree_decoder.h */,
+				76E52B6CC4590F41B22E0FA8 /* integer_points_kd_tree_encoder.h */,
+				B14CEC124298CE6DA4D56422 /* point_cloud_types.h */,
+				4BF9F19AC6ECE40ACDFB52FC /* quantize_points_3.h */,
+				371550C821AE659F66D64F57 /* queuing_policy.h */,
+			);
+			name = algorithms;
+			sourceTree = "<group>";
+		};
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		6C28FFB5A3A2F15F2AED3F49 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8D97F8A0568BD3648F4706AF /* compression */,
+				518E55C5DA5FB78E75ACBFA1 /* core */,
+				EA44D7063BF19B96D6A6C9EF /* io */,
+				17EAFBC1887A9A7D1B6172E3 /* mesh */,
+				B0797505919AF16808615F93 /* point_cloud */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		7F58E792CC59B2A6D27A7889 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				B90B7DE78F444E6AA1B3A2C2 /* compression_shared.h */,
+				DEB76B11CC1486F4467F3B00 /* encoder_options.h */,
+				40D193C5E1928FE52026594D /* encoding_features.h */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		802725E4D5C8C0D1B2453FC9 /* ofxDraco */ = {
+			isa = PBXGroup;
+			children = (
+				2E5EE788288E1B319087EEAB /* src */,
+				9FCE41E9055C21F24DD6A514 /* libs */,
+			);
+			name = ofxDraco;
+			sourceTree = "<group>";
+		};
+		8D97F8A0568BD3648F4706AF /* compression */ = {
+			isa = PBXGroup;
+			children = (
+				411F3047DF02D99FD80FFC75 /* attributes */,
+				7F58E792CC59B2A6D27A7889 /* config */,
+				84C7577F4F52F5E307CEF44D /* decode.h */,
+				2CD74538CC3213A8E50A55EB /* encode.h */,
+				CB3B14C7B3BBA1ED77F99581 /* mesh */,
+				321E31460B4DD1388240943E /* point_cloud */,
+			);
+			name = compression;
+			sourceTree = "<group>";
+		};
+		9FCE41E9055C21F24DD6A514 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				B32080225DB14625BE381098 /* draco */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		B0797505919AF16808615F93 /* point_cloud */ = {
+			isa = PBXGroup;
+			children = (
+				A4C9723875EA8DCDACE57E0C /* geometry_attribute.h */,
+				AD47C33DA4B126141104CAC0 /* geometry_indices.h */,
+				8BF44AE175B4040011B6FDBE /* point_attribute.h */,
+				FAC92906BFEDCD308BD8DC29 /* point_cloud.h */,
+				1F6F28C6F4AECD22E1A9D038 /* point_cloud_builder.h */,
+			);
+			name = point_cloud;
+			sourceTree = "<group>";
+		};
+		B32080225DB14625BE381098 /* draco */ = {
+			isa = PBXGroup;
+			children = (
+				6C28FFB5A3A2F15F2AED3F49 /* include */,
+			);
+			name = draco;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				802725E4D5C8C0D1B2453FC9 /* ofxDraco */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		BE54661176715CD03BADA207 /* prediction_schemes */ = {
+			isa = PBXGroup;
+			children = (
+				AEB65BA04DECAD185F891ABB /* mesh_prediction_scheme.h */,
+				0028A967C8B56AD31CF5787F /* mesh_prediction_scheme_data.h */,
+				F82FCF19824875DDDAF79180 /* mesh_prediction_scheme_multi_parallelogram.h */,
+				6634B8C4E491F5078CA858A3 /* mesh_prediction_scheme_parallelogram.h */,
+				11B70E9FE83AE4BBCF3064C4 /* mesh_prediction_scheme_parallelogram_shared.h */,
+				21E97EA36637CBA6314F5E82 /* mesh_prediction_scheme_tex_coords.h */,
+				52189D05CA3AAE00F3ED2BA2 /* prediction_scheme.h */,
+				A2C300A861C38AD900B99576 /* prediction_scheme_decoder_factory.h */,
+				14D511460D766DA426755FC9 /* prediction_scheme_difference.h */,
+				52A74D711C8151EF7D3D8A95 /* prediction_scheme_encoder_factory.h */,
+				5B601EC5055EC1591287DDB0 /* prediction_scheme_factory.h */,
+				B1AE1E07E36A950D1AACA15E /* prediction_scheme_interface.h */,
+				B88D3D0EFA3DC5AA7290D95E /* prediction_scheme_normal_octahedron_transform.h */,
+				5E41D4834646F07DE2F667D6 /* prediction_scheme_transform.h */,
+				917949874034E4E631DFBEBF /* prediction_scheme_wrap_transform.h */,
+			);
+			name = prediction_schemes;
+			sourceTree = "<group>";
+		};
+		CB3B14C7B3BBA1ED77F99581 /* mesh */ = {
+			isa = PBXGroup;
+			children = (
+				7599787C6182831F6E9912A2 /* mesh_decoder.h */,
+				440D84D549F3D3FB334A9985 /* mesh_decoder_helpers.h */,
+				2A5BC362899E3F65F4A71F45 /* mesh_edgebreaker_decoder.h */,
+				96DFA51400618D1CCBD5F5EB /* mesh_edgebreaker_decoder_impl.h */,
+				324B808F8502EE6AEEAA844E /* mesh_edgebreaker_decoder_impl_interface.h */,
+				4B544B2300C32B5E3A38C06C /* mesh_edgebreaker_encoder.h */,
+				56468672EF5662707E8FE2DA /* mesh_edgebreaker_encoder_impl.h */,
+				9FBA877F4B4C015E6B150D66 /* mesh_edgebreaker_encoder_impl_interface.h */,
+				6AF9386DDC8AF7062CF535AD /* mesh_edgebreaker_shared.h */,
+				D4FD12B54D8F0ACD032CBD35 /* mesh_edgebreaker_traversal_decoder.h */,
+				BCFDB6AE8B1D9201022DB192 /* mesh_edgebreaker_traversal_encoder.h */,
+				2F91A6BDC3F210F6B3F2F38D /* mesh_edgebreaker_traversal_predictive_decoder.h */,
+				B1D7D38A7D124070E23A421D /* mesh_edgebreaker_traversal_predictive_encoder.h */,
+				D0D144A5FB72BDEDB7D07C8E /* mesh_encoder.h */,
+				A14B66D12F9ED4123602A3D8 /* mesh_encoder_helpers.h */,
+				99608A7C04810A5E596B9718 /* mesh_sequential_decoder.h */,
+				DEF861408DFCCFFCC4CC72FD /* mesh_sequential_encoder.h */,
+			);
+			name = mesh;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		EA44D7063BF19B96D6A6C9EF /* io */ = {
+			isa = PBXGroup;
+			children = (
+				C37E1E6B8F28ECD84CC69F1D /* mesh_io.h */,
+				3844D19A6EAAD894F0168B28 /* obj_decoder.h */,
+				F413A20588C6EBE9139ABAFF /* obj_encoder.h */,
+				B6E999F26C7DAE9C072C735C /* parser_utils.h */,
+				289B05BE88C8A45055D11A6C /* ply_decoder.h */,
+				564429E24A9C032C498906A6 /* ply_encoder.h */,
+				949DC57F58467D8D37B4E0A9 /* ply_property_reader.h */,
+				9DE28B84CA267A4F55B7CE0D /* ply_property_writer.h */,
+				0C649100059A7602013779B1 /* ply_reader.h */,
+				D34E86A5C56757CA90E0E64C /* point_cloud_io.h */,
+			);
+			name = io;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = example;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				4AC9B8C55E2C460F12E508F4 /* ofxDraco.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxDraco/libs,
+					../../../addons/ofxDraco/libs/draco,
+					../../../addons/ofxDraco/libs/draco/include,
+					../../../addons/ofxDraco/libs/draco/include/compression,
+					../../../addons/ofxDraco/libs/draco/include/compression/attributes,
+					../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes,
+					../../../addons/ofxDraco/libs/draco/include/compression/config,
+					../../../addons/ofxDraco/libs/draco/include/compression/mesh,
+					../../../addons/ofxDraco/libs/draco/include/compression/point_cloud,
+					../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms,
+					../../../addons/ofxDraco/libs/draco/include/core,
+					../../../addons/ofxDraco/libs/draco/include/io,
+					../../../addons/ofxDraco/libs/draco/include/mesh,
+					../../../addons/ofxDraco/libs/draco/include/point_cloud,
+					../../../addons/ofxDraco/libs/draco/lib,
+					../../../addons/ofxDraco/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxDraco/libs,
+					../../../addons/ofxDraco/libs/draco,
+					../../../addons/ofxDraco/libs/draco/include,
+					../../../addons/ofxDraco/libs/draco/include/compression,
+					../../../addons/ofxDraco/libs/draco/include/compression/attributes,
+					../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes,
+					../../../addons/ofxDraco/libs/draco/include/compression/config,
+					../../../addons/ofxDraco/libs/draco/include/compression/mesh,
+					../../../addons/ofxDraco/libs/draco/include/compression/point_cloud,
+					../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms,
+					../../../addons/ofxDraco/libs/draco/include/core,
+					../../../addons/ofxDraco/libs/draco/include/io,
+					../../../addons/ofxDraco/libs/draco/include/mesh,
+					../../../addons/ofxDraco/libs/draco/include/point_cloud,
+					../../../addons/ofxDraco/libs/draco/lib,
+					../../../addons/ofxDraco/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxDraco/libs,
+					../../../addons/ofxDraco/libs/draco,
+					../../../addons/ofxDraco/libs/draco/include,
+					../../../addons/ofxDraco/libs/draco/include/compression,
+					../../../addons/ofxDraco/libs/draco/include/compression/attributes,
+					../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes,
+					../../../addons/ofxDraco/libs/draco/include/compression/config,
+					../../../addons/ofxDraco/libs/draco/include/compression/mesh,
+					../../../addons/ofxDraco/libs/draco/include/compression/point_cloud,
+					../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms,
+					../../../addons/ofxDraco/libs/draco/include/core,
+					../../../addons/ofxDraco/libs/draco/include/io,
+					../../../addons/ofxDraco/libs/draco/include/mesh,
+					../../../addons/ofxDraco/libs/draco/include/point_cloud,
+					../../../addons/ofxDraco/libs/draco/lib,
+					../../../addons/ofxDraco/src,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					../libs/draco/lib/libdraco.a,
+					../libs/draco/lib/libdracodec.a,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxDraco/libs,
+					../../../addons/ofxDraco/libs/draco,
+					../../../addons/ofxDraco/libs/draco/include,
+					../../../addons/ofxDraco/libs/draco/include/compression,
+					../../../addons/ofxDraco/libs/draco/include/compression/attributes,
+					../../../addons/ofxDraco/libs/draco/include/compression/attributes/prediction_schemes,
+					../../../addons/ofxDraco/libs/draco/include/compression/config,
+					../../../addons/ofxDraco/libs/draco/include/compression/mesh,
+					../../../addons/ofxDraco/libs/draco/include/compression/point_cloud,
+					../../../addons/ofxDraco/libs/draco/include/compression/point_cloud/algorithms,
+					../../../addons/ofxDraco/libs/draco/include/core,
+					../../../addons/ofxDraco/libs/draco/include/io,
+					../../../addons/ofxDraco/libs/draco/include/mesh,
+					../../../addons/ofxDraco/libs/draco/include/point_cloud,
+					../../../addons/ofxDraco/libs/draco/lib,
+					../../../addons/ofxDraco/src,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					../libs/draco/lib/libdraco.a,
+					../libs/draco/lib/libdracodec.a,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
