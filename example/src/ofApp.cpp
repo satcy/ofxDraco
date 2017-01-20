@@ -2,12 +2,19 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(0);
-    
-    float t = ofGetElapsedTimef();
-    ofxDraco::decode("dragon.obj.drc", m);
-    cout << (ofGetElapsedTimef() - t)*1000.0 << endl;
-    for ( auto & p : m.getVertices() ) {
-        p *= 100.0;
+    {// encode
+        
+        float t = ofGetElapsedTimef();
+        ofxDraco::encodeFromFile("dragon.obj", "dragon.obj.drc");
+        cout << (ofGetElapsedTimef() - t)*1000.0 << endl;
+    }
+    {// decode
+        float t = ofGetElapsedTimef();
+        m = ofxDraco::load("dragon.obj.drc");
+        cout << (ofGetElapsedTimef() - t)*1000.0 << endl;
+        for ( auto & p : m.getVertices() ) {
+            p *= 100.0;
+        }
     }
 }
 

@@ -10,9 +10,19 @@
 
 
 namespace ofxDraco {
-    bool decode(string path, ofMesh & m) {
+    //ofMesh toOf(const draco::Mesh & m) {}
+    
+    //draco::Mesh toDraco(const ofMesh & m) {}
+    
+    ofMesh load(const string & path) {
+        ofMesh m;
+        decode(path, m);
+        return m;
+    }
+    
+    bool decode(const string & input_path, ofMesh & dst) {
         
-        ofFile input_file(path, ofFile::ReadOnly, true);
+        ofFile input_file(input_path, ofFile::ReadOnly, true);
         
         if ( !input_file.exists() ) {
             printf("Failed opening the input file.\n");
@@ -68,8 +78,8 @@ namespace ofxDraco {
                         inds.emplace_back(index);
                     }
                 }
-                m.addVertices(verts);
-                m.addIndices(inds);
+                dst.addVertices(verts);
+                dst.addIndices(inds);
             }
         } else if (geom_type == draco::POINT_CLOUD) {
             // Failed to decode it as mesh, so let's try to decode it as a point cloud.
@@ -90,7 +100,7 @@ namespace ofxDraco {
                     verts.emplace_back(pt);
                 }
             }
-            m.addVertices(verts);
+            dst.addVertices(verts);
         }
 
         mesh = nullptr;
@@ -98,7 +108,106 @@ namespace ofxDraco {
         return true;
     }
     
-    bool encode(const ofMesh & m, ofBuffer & buff) {
+    // private
+    int EncodePointCloudToFile(const draco::PointCloud &pc,
+                               const draco::EncoderOptions &options,
+                               const std::string &file) {
+        
+        // Encode the geometry.
+        draco::EncoderBuffer buffer;
+        
+        if (!draco::EncodePointCloudToBuffer(pc, options, &buffer)) {
+            printf("Failed to encode the point cloud.\n");
+            return -1;
+        }
+        
+        // Save the encoded geometry into a file.
+        std::ofstream out_file(file, std::ios::binary);
+        if (!out_file) {
+            printf("Failed to create the output file.\n");
+            return -1;
+        }
+        out_file.write(buffer.data(), buffer.size());
+        //printf("\nEncoded size = %zu bytes\n\n", buffer.size());
+        return 0;
+    }
+    
+    // private
+    int EncodeMeshToFile(const draco::Mesh &mesh,
+                         const draco::EncoderOptions &options,
+                         const std::string &file) {
+        
+        // Encode the geometry.
+        draco::EncoderBuffer buffer;
+        
+        if (!draco::EncodeMeshToBuffer(mesh, options, &buffer)) {
+            printf("Failed to encode the mesh.\n");
+            return -1;
+        }
+        
+        // Save the encoded geometry into a file.
+        std::ofstream out_file(file, std::ios::binary);
+        if (!out_file) {
+            printf("Failed to create the output file.\n");
+            return -1;
+        }
+        out_file.write(buffer.data(), buffer.size());
+        //printf("\nEncoded size = %zu bytes\n\n", buffer.size());
+        return 0;
+    }
+    
+    bool encodeFromFile(const string & input_path, const string & out_path,
+                bool is_point_cloud,
+                int pos_quantization_bits,
+                int tex_coords_quantization_bits,
+                int normals_quantization_bits,
+                int compression_level) {
+        
+        std::unique_ptr<draco::PointCloud> pc;
+        draco::Mesh *mesh = nullptr;
+        if ( !is_point_cloud ) {
+            std::unique_ptr<draco::Mesh> in_mesh = draco::ReadMeshFromFile(ofToDataPath(input_path, true));
+            
+            if (!in_mesh) {
+                printf("Failed loading the input mesh.\n");
+                return -1;
+            }
+            mesh = in_mesh.get();
+            pc = std::move(in_mesh);
+        } else {
+            pc = draco::ReadPointCloudFromFile(ofToDataPath(input_path, true));
+            if (!pc) {
+                printf("Failed loading the input point cloud.\n");
+                return -1;
+            }
+        }
+        
+        // Setup encoder options.
+        draco::EncoderOptions encoder_options = draco::CreateDefaultEncoderOptions();
+        if (pos_quantization_bits > 0) {
+            draco::SetNamedAttributeQuantization(&encoder_options, *pc.get(),
+                                                 draco::GeometryAttribute::POSITION,
+                                                 pos_quantization_bits);
+        }
+        if (tex_coords_quantization_bits > 0) {
+            draco::SetNamedAttributeQuantization(&encoder_options, *pc.get(),
+                                                 draco::GeometryAttribute::TEX_COORD,
+                                                 tex_coords_quantization_bits);
+        }
+        if (normals_quantization_bits > 0) {
+            draco::SetNamedAttributeQuantization(&encoder_options, *pc.get(),
+                                                 draco::GeometryAttribute::NORMAL,
+                                                 normals_quantization_bits);
+        }
+        // Convert compression level to speed (that 0 = slowest, 10 = fastest).
+        const int speed = 10 - compression_level;
+        draco::SetSpeedOptions(&encoder_options, speed, speed);
+        
+        if (mesh && mesh->num_faces() > 0)
+            return EncodeMeshToFile(*mesh, encoder_options, ofToDataPath(out_path, true));
+        return EncodePointCloudToFile(*pc.get(), encoder_options, ofToDataPath(out_path, true));
+        
         return true;
     }
+    
 } // namespace ofxDraco
