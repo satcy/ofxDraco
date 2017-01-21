@@ -22,6 +22,6 @@ namespace ofxDraco {
     ofMesh load(const string & path);
     bool decode(const string & input_path, ofMesh & dst);
     
-    bool encodeFromFile(const string & input_path, const string & out_path, bool is_point_cloud = false, int pos_quantization_bits = 14, int tex_coords_quantization_bits = 12, int normals_quantization_bits = 10, int compression_level = 5);
+    bool encodeFromFile(const string & input_path, const string & output_path, bool is_absolute_path = false, bool is_point_cloud = false, int pos_quantization_bits = 14, int tex_coords_quantization_bits = 12, int normals_quantization_bits = 10, int compression_level = 5);
     
 } // namespace ofxDraco

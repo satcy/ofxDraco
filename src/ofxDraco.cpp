@@ -156,17 +156,19 @@ namespace ofxDraco {
         return 0;
     }
     
-    bool encodeFromFile(const string & input_path, const string & out_path,
-                bool is_point_cloud,
-                int pos_quantization_bits,
-                int tex_coords_quantization_bits,
-                int normals_quantization_bits,
-                int compression_level) {
+    bool encodeFromFile(const string & input_path,
+                        const string & output_path,
+                        bool is_absolute_path,
+                        bool is_point_cloud,
+                        int pos_quantization_bits,
+                        int tex_coords_quantization_bits,
+                        int normals_quantization_bits,
+                        int compression_level) {
         
         std::unique_ptr<draco::PointCloud> pc;
         draco::Mesh *mesh = nullptr;
         if ( !is_point_cloud ) {
-            std::unique_ptr<draco::Mesh> in_mesh = draco::ReadMeshFromFile(ofToDataPath(input_path, true));
+            std::unique_ptr<draco::Mesh> in_mesh = draco::ReadMeshFromFile(is_absolute_path ? input_path : ofToDataPath(input_path, true));
             
             if (!in_mesh) {
                 printf("Failed loading the input mesh.\n");
@@ -175,7 +177,7 @@ namespace ofxDraco {
             mesh = in_mesh.get();
             pc = std::move(in_mesh);
         } else {
-            pc = draco::ReadPointCloudFromFile(ofToDataPath(input_path, true));
+            pc = draco::ReadPointCloudFromFile(is_absolute_path ? input_path : ofToDataPath(input_path, true));
             if (!pc) {
                 printf("Failed loading the input point cloud.\n");
                 return -1;
@@ -204,8 +206,8 @@ namespace ofxDraco {
         draco::SetSpeedOptions(&encoder_options, speed, speed);
         
         if (mesh && mesh->num_faces() > 0)
-            return EncodeMeshToFile(*mesh, encoder_options, ofToDataPath(out_path, true));
-        return EncodePointCloudToFile(*pc.get(), encoder_options, ofToDataPath(out_path, true));
+            return EncodeMeshToFile(*mesh, encoder_options, is_absolute_path ? output_path : ofToDataPath(output_path, true));
+        return EncodePointCloudToFile(*pc.get(), encoder_options, is_absolute_path ? output_path : ofToDataPath(output_path, true));
         
         return true;
     }
