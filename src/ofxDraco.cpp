@@ -78,6 +78,25 @@ namespace ofxDraco {
                         inds.emplace_back(index);
                     }
                 }
+                {
+                    const draco::PointAttribute *const att =
+                    pc->GetNamedAttribute(draco::GeometryAttribute::NORMAL);
+                    if (att == nullptr || att->size() == 0) {
+                        //no normal
+                    } else {
+                        std::array<float, 3> value;
+                        
+                        vector<ofVec3f> normals;
+                        for (draco::AttributeValueIndex i(0); i < att->size(); ++i) {
+                            if (att->ConvertValue<float, 3>(i, &value[0]) ) {
+                                ofVec3f pt(value[0], value[1], value[2]);
+                                normals.emplace_back(pt);
+                            }
+                        }
+                        
+                        dst.addNormals(normals);
+                    }
+                }
                 dst.addVertices(verts);
                 dst.addIndices(inds);
             }
